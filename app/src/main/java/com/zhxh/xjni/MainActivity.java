@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView tv = findViewById(R.id.sample_text);
-        tv.setText(SoManager.getSingleton().stringFromJNI());
+        tv.append(SoManager.getSingleton().stringFromJNI());
         tv.append("\n");
-        tv.setText(SoManager.getSingleton().helloFromJNI());
+        tv.append(SoManager.getSingleton().helloFromJNI());
     }
 }

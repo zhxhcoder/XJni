@@ -22,7 +22,7 @@ public class SoManager {
     }
 
     static {
-        System.loadLibrary("native-lib");
+        System.loadLibrary("jnihello");
     }
 
     public native String stringFromJNI();
