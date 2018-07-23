@@ -27,4 +27,6 @@ public class SoManager {
 
     public native String stringFromJNI();
 
+    public native String helloFromJNI();
+
 }

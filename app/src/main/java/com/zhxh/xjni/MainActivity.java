@@ -13,5 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv = findViewById(R.id.sample_text);
         tv.setText(SoManager.getSingleton().stringFromJNI());
+        tv.append("\n");
+        tv.setText(SoManager.getSingleton().helloFromJNI());
     }
 }
