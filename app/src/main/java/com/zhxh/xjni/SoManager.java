@@ -29,4 +29,6 @@ public class SoManager {
 
     public native String helloFromJNI();
 
+    public native String showUseJava();
+
 }
