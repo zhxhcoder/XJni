@@ -68,15 +68,14 @@ Java_com_zhxh_xjni_JNICall_nativeJNIMethodWithLog(
 }
 
 /**
- 得到锅炉的压力值
+ 得到压力值
  0~250之间
 */
-
 int pressure = 20;
 
 int getPressure() {
-    int incease = rand() % 20;
-    pressure += incease;
+    int increase = rand() % 20;
+    pressure += increase;
     return pressure;
 }
 
@@ -85,7 +84,7 @@ extern "C" JNIEXPORT jint
 
 JNICALL
 /**
- * 从锅炉感应器中得到锅炉压力值
+ * 从感应器中得到压力值
  */
 Java_com_zhxh_xjni_JNICall_getPressure(JNIEnv *env, jobject instance) {
     int pressure = getPressure();

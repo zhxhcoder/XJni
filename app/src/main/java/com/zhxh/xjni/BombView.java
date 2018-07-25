@@ -32,7 +32,7 @@ public class BombView extends View {
         super.onDraw(canvas);
 
         if (pressure > 220) {
-            //1.如果压力值大于220，就绘制文本，显示锅炉爆炸了，快跑
+            //1.如果压力值大于220，就绘制文本，显示要爆炸了，快跑
             canvas.drawText("快跑！！，要爆了！", 50, getHeight() / 8, paint);
         } else {
             //2.正常和提示的情况
@@ -43,7 +43,7 @@ public class BombView extends View {
             if (pressure < 200) {
                 paint.setColor(Color.GREEN);
                 canvas.drawRect(10, 260 - pressure, 60, 260, paint);
-            } else if (pressure >= 200) {
+            } else {
                 //2.2如果是大于200警示给看护者，并且设置画笔颜色，红色
                 paint.setColor(Color.RED);
                 canvas.drawRect(10, 260 - pressure, 60, 260, paint);
