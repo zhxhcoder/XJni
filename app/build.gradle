@@ -27,6 +27,16 @@ android {
             path "src/main/cpp/CMakeLists.txt"
         }
     }
+    packagingOptions {
+        exclude 'META-INF/XXXX'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = []
+            jni.srcDirs=[]
+        }
+    }
+
 }
 
 dependencies {
