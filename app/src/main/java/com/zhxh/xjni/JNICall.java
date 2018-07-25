@@ -34,4 +34,6 @@ public class JNICall {
 
     public native String nativeJNIMethodWithLog();
 
+    public native void uninstallListener(String packName, int sdkVersion);
+    public native int getPressure();
 }
