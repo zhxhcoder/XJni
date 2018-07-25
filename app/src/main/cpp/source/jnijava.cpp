@@ -11,7 +11,7 @@ JNICALL
 Java_com_zhxh_xjni_JNICall_showUseJava(
         JNIEnv *env,
         jobject /* this */) {
-    std::string hello = "jniJava";
+    std::string hello = "jni-Java showUseJava";
     return env->NewStringUTF(hello.c_str());
 }
 

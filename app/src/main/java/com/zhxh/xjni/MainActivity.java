@@ -16,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
         tv.append("\n");
         tv.append(JNICall.getSingleton().helloFromJNI());
         tv.append("\n");
-        //tv.append(JNICall.getSingleton().showUseJava());
+        tv.append(JNICall.getSingleton().showUseJava());
     }
 }

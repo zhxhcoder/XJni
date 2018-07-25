@@ -7,7 +7,7 @@ JNICALL
 Java_com_zhxh_xjni_JNICall_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
-    std::string hello = "stringFromJNI from JNICall Native";
+    std::string hello = "jhi-hello stringFromJNI";
     return env->NewStringUTF(hello.c_str());
 }
 
@@ -16,6 +16,6 @@ JNICALL
 Java_com_zhxh_xjni_JNICall_helloFromJNI(
         JNIEnv *env,
         jobject /* this */) {
-    std::string hello = "helloFromJNI from JNICall Native";
+    std::string hello = "jhi-hello helloFromJNI";
     return env->NewStringUTF(hello.c_str());
 }

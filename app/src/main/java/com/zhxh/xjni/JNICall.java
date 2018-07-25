@@ -23,6 +23,7 @@ public class JNICall {
 
     static {
         System.loadLibrary("jnihello");
+        System.loadLibrary("jnijava");
     }
 
     public native String stringFromJNI();
