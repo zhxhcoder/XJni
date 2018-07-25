@@ -4,18 +4,18 @@
 extern "C" JNIEXPORT jstring
 
 JNICALL
-Java_com_zhxh_xjni_SoManager_stringFromJNI(
+Java_com_zhxh_xjni_JNICall_stringFromJNI(
         JNIEnv *env,
         jobject /* this */) {
-    std::string hello = "stringFromJNI from SoManager Native";
+    std::string hello = "stringFromJNI from JNICall Native";
     return env->NewStringUTF(hello.c_str());
 }
 
 extern "C" JNIEXPORT jstring
 JNICALL
-Java_com_zhxh_xjni_SoManager_helloFromJNI(
+Java_com_zhxh_xjni_JNICall_helloFromJNI(
         JNIEnv *env,
         jobject /* this */) {
-    std::string hello = "helloFromJNI from SoManager Native";
+    std::string hello = "helloFromJNI from JNICall Native";
     return env->NewStringUTF(hello.c_str());
 }

@@ -8,7 +8,7 @@
 extern "C" JNIEXPORT jstring
 
 JNICALL
-Java_com_zhxh_xjni_SoManager_showUseJava(
+Java_com_zhxh_xjni_JNICall_showUseJava(
         JNIEnv *env,
         jobject /* this */) {
     std::string hello = "jniJava";

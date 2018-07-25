@@ -12,10 +12,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView tv = findViewById(R.id.sample_text);
-        tv.append(SoManager.getSingleton().stringFromJNI());
+        tv.append(JNICall.getSingleton().stringFromJNI());
         tv.append("\n");
-        tv.append(SoManager.getSingleton().helloFromJNI());
+        tv.append(JNICall.getSingleton().helloFromJNI());
         tv.append("\n");
-        //tv.append(SoManager.getSingleton().showUseJava());
+        //tv.append(JNICall.getSingleton().showUseJava());
     }
 }

@@ -3,18 +3,18 @@ package com.zhxh.xjni;
 /**
  * Created by zhxh on 2018/7/23
  */
-public class SoManager {
+public class JNICall {
 
-    private SoManager() {
+    private JNICall() {
     }
 
-    private static volatile SoManager instance;
+    private static volatile JNICall instance;
 
-    public static SoManager getSingleton() {
+    public static JNICall getSingleton() {
         if (instance == null) {
-            synchronized (SoManager.class) {
+            synchronized (JNICall.class) {
                 if (instance == null) {
-                    instance = new SoManager();
+                    instance = new JNICall();
                 }
             }
         }
