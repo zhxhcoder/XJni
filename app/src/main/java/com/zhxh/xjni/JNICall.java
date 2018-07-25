@@ -26,10 +26,10 @@ public class JNICall {
         System.loadLibrary("jnijava");
     }
 
-    public native String stringFromJNI();
-
     public native String helloFromJNI();
 
     public native String showUseJava();
+
+    public native String callBackToast();
 
 }
