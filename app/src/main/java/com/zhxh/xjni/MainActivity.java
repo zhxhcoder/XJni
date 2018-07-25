@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         sample_text.append("\n");
         sample_text.append(JNICall.getSingleton().showUseJava());
 
+        TextView native_log_text = findViewById(R.id.native_log_text);
+        native_log_text.append(JNICall.getSingleton().nativeJNIMethodWithLog());
+
         Button btnJniToast = findViewById(R.id.btnJniToast);
         btnJniToast.setOnClickListener(new View.OnClickListener() {
             @Override

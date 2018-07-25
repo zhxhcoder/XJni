@@ -32,4 +32,6 @@ public class JNICall {
 
     public native String callBackToast();
 
+    public native String nativeJNIMethodWithLog();
+
 }
